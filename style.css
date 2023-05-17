@@ -1,0 +1,98 @@
+img {
+  width: 150px;
+}
+h1,h2 {
+  font-family: 'Playfair Display', serif;  color: rgb(34, 0, 103);
+  line-height: 120%;
+}
+.btn-blue {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(233, 178, 97);
+  padding: 15px 13px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);;
+}
+
+.btn-blue:hover {
+  text-decoration:wavy;
+  color: blanchedalmond;
+  background-color: rgb(97, 97, 181);
+}
+
+p {
+  margin-bottom: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(152, 148, 148);
+}
+
+a:hover {
+  color:black;
+}
+
+
+#list-inline > li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+#list-inline {
+  padding-left: 0px !important;
+  list-style: none;
+}
+.container {
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+/* background-color, font-family, color, font-size and line-height */
+.card-white {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 0px 30px rgba(30, 1, 110, 0.5);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.round-img {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border-style: groove;
+  border-image: round;
+}
+
+/* .round-img:hover {
+
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  border-style: groove;
+  border-style: inset;
+  border-color: rgb(231, 231, 142);
+} */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card-white {
+    width: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card-white {
+    width: 100px;
+   }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card-white {
+    width: 120px;
+    }
+}
