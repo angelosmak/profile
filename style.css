@@ -2953,17 +2953,6 @@ max-width: 400px; /* Set the maximum width for images */
 height: auto;
 }
 
-.trito_tm_portfolio h3 {
-margin-top: 20px;
-font-size: 24px;
-color: #000;
-}
-
-.trito_tm_portfolio p {
-margin-top: 10px;
-color: #666;
-line-height: 1.5;
-}
 
 .trito_tm_portfolio .trito_tm_button {
 margin-top: 20px;
