@@ -2929,3 +2929,58 @@ color:blanchedalmond;
 width: 50px;
 height: 50px
 }
+
+.right .quote{
+  color: #24315e;
+  font-size: larger;
+}
+
+.trito_tm_portfolio ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.trito_tm_portfolio li {
+display: flex;
+flex-direction: column;
+margin-bottom: 50px;
+}
+
+.trito_tm_portfolio img {
+width: 100%;
+max-width: 400px; /* Set the maximum width for images */
+height: auto;
+}
+
+.trito_tm_portfolio h3 {
+margin-top: 20px;
+font-size: 24px;
+color: #000;
+}
+
+.trito_tm_portfolio p {
+margin-top: 10px;
+color: #666;
+line-height: 1.5;
+}
+
+.trito_tm_portfolio .trito_tm_button {
+margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+.trito_tm_portfolio li {
+  flex-direction: row;
+  align-items: center;
+}
+
+.trito_tm_portfolio img {
+  max-width: 100%; /* Set the maximum width for images on larger screens */
+}
+
+.trito_tm_portfolio div {
+  margin: 0 20px;
+}
+}
