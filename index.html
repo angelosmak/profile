@@ -375,27 +375,35 @@
   });
 
   function trito_tm_trigger_menu() {
-      "use strict";
-      var hamburger = jQuery('.trigger .hamburger');
-      var mobileMenu = jQuery('.trito_tm_mobile_menu .dropdown');
-      var mobileMenuList = jQuery('.trito_tm_mobile_menu .dropdown .dropdown_inner ul li a');
-      hamburger.on('click', function() {
-          var element = jQuery(this);
-          if (element.hasClass('is-active')) {
-              element.removeClass('is-active');
-              mobileMenu.slideUp();
-          } else {
-              element.addClass('is-active');
-              mobileMenu.slideDown();
-          }
-          return false;
-      });
-      mobileMenuList.on('click', function() {
-          jQuery('.trigger .hamburger').removeClass('is-active');
-          mobileMenu.slideUp();
-          return false;
-      });
-  }
+    "use strict";
+    var hamburger = jQuery('.trigger .hamburger');
+    var mobileMenu = jQuery('.trito_tm_mobile_menu .dropdown');
+    var mobileMenuList = jQuery('.trito_tm_mobile_menu .dropdown .dropdown_inner ul li a');
+
+    hamburger.on('click', function() {
+        var element = jQuery(this);
+        if (element.hasClass('is-active')) {
+            element.removeClass('is-active');
+            mobileMenu.slideUp();
+        } else {
+            element.addClass('is-active');
+            mobileMenu.slideDown();
+        }
+        return false;
+    });
+
+    // Handle navigation when clicking on the links inside the dropdown
+    mobileMenuList.on('click', function() {
+        var target = jQuery(this).attr('href'); // Get the target section's ID from the href attribute
+        jQuery('html, body').animate({
+            scrollTop: jQuery(target).offset().top // Scroll to the target section
+        }, 800); // Adjust the scroll speed as needed
+        jQuery('.trigger .hamburger').removeClass('is-active');
+        mobileMenu.slideUp();
+        return false;
+    });
+}
+
 
 
   function trito_tm_preloader() {
