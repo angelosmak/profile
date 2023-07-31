@@ -2863,9 +2863,9 @@ color:blanchedalmond;
 
   .trito_tm_hero .avatar img {
     position: absolute;
-    bottom: 359px;
-    right: 10px;
-    width: 50vw;
+    bottom: 55%;
+    right: 1px;
+    height: 43vh;
   }
 
   .trito_tm_portfolio img {
