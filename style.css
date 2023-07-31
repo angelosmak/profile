@@ -2862,11 +2862,10 @@ color:blanchedalmond;
 @media(max-width: 768px) {
 
   .trito_tm_hero .avatar img {
-      max-width: 500px;
-      max-height: 500px;
-      position: absolute;
-      bottom:400px;
-      right: 10%;
+    position: absolute;
+    bottom: 359px;
+    right: 10px;
+    width: 50vw;
   }
 
   .trito_tm_portfolio img {
